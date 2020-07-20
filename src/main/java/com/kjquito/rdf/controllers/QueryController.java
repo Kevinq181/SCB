@@ -21,6 +21,11 @@ public class QueryController {
 	public List<Results1> query1() {
 		return queryService.consulta1();
 	}
+	
+	@GetMapping("/querys")
+	public String querys() {
+		return "es una prueba";
+	}
 
 	@GetMapping("/query2")
 	public List<Results2> query2() {
